@@ -49,7 +49,7 @@ networks:
 1. Clona este repositorio en tu máquina local.
 
 ```yaml
-git clone https://github.com/tu-repositorio/real-time-banking.git
+git clone https://github.com/diegoalbanovoa/Real-Time-Banking-Transaction-System.git
 cd real-time-banking
 ```
 
