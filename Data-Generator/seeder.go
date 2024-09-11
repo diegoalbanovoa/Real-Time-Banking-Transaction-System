@@ -1,10 +1,10 @@
-// Autor: [Tu nombre]
+// Autor: Diego Fernando Alba Novoa
 // Descripción: Este programa genera cuentas bancarias y transacciones aleatorias
 //              y las inserta en una base de datos MySQL. Cada cuenta tiene un número
 //              único y un balance inicial aleatorio, seguido de un conjunto de transacciones
 //              (depósitos y retiros) que se generan aleatoriamente. Es útil para simular
 //              escenarios de carga en un sistema bancario.
-// Fecha: [Fecha actual]
+// Fecha: 10/09/2024
 
 package main
 

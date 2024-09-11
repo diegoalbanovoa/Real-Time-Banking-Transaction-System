@@ -13,12 +13,18 @@ import (
 	"testing"
 )
 
-// Mock del repositorio de cuentas
+// mockAccountRepository es una implementación simulada (mock) del repositorio de cuentas.
+// Este mock actúa como una base de datos en memoria utilizando un mapa (map[int]*account.Account)
+// para almacenar las cuentas. Se utiliza para realizar pruebas unitarias sin necesidad de interactuar
+// con una base de datos real.
 type mockAccountRepository struct {
-	accounts map[int]*account.Account
+	accounts map[int]*account.Account // Mapa que simula la base de datos de cuentas, donde la clave es el ID.
 }
 
+// Save simula el guardado de una cuenta en el repositorio.
+// El método agrega la cuenta al mapa de cuentas usando su ID como clave.
 func (m *mockAccountRepository) Save(a *account.Account) error {
+	// Simula el guardado de la cuenta en el repositorio (almacena en el mapa).
 	m.accounts[a.ID] = a
 	return nil
 }
