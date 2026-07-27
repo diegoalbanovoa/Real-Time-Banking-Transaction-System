@@ -1,0 +1,5 @@
+*.prof
+trace.out
+__pycache__/
+*.pyc
+.idea/

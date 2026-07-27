@@ -12,3 +12,13 @@ type Transaction struct {
 	TransactionType string    // Tipo de transacción: puede ser "deposit" o "withdrawal"
 	CreatedAt       time.Time // Marca de tiempo que indica cuándo fue creada la transacción
 }
+
+// New crea una nueva transacción
+func New(accountID int, amount float64, transactionType string) *Transaction {
+	return &Transaction{
+		AccountID:       accountID,
+		Amount:          amount,
+		TransactionType: transactionType,
+		CreatedAt:       time.Now(),
+	}
+}
